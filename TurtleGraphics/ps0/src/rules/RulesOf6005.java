@@ -36,7 +36,10 @@ public class RulesOf6005 {
             boolean availableToOthers, boolean writtenAsCourseWork,
             boolean citingYourSource, boolean implementationRequired) {
 
-            if(implementationRequired() && ((writtenByYourself()) || (!writtenByYourself() && citingYourSource() && writtenAsCourseWork())) && !availableToOthers()) {
+            if(implementationRequired 
+               && (writtenByYourself 
+                   || (!writtenByYourself && citingYourSource && writtenAsCourseWork)) 
+               && !availableToOthers) {
                 return true;
             }
             return false;
