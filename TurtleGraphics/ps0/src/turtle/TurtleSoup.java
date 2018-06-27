@@ -32,7 +32,15 @@ public class TurtleSoup {
      * @return angle in degrees, where 0 <= angle < 360
      */
     public static double calculateRegularPolygonAngle(int sides) {
-        throw new RuntimeException("implement me!");
+        if(sides <= 2) {
+            System.out.println("Enter more than 2 sides");
+            return -1;
+        }
+        int degrees = 180;
+        
+        return (double)((sides -2) * 180) /sides;
+        
+        
     }
 
     /**
